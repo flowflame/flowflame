@@ -1,0 +1,14 @@
+#此为python小程序的代码
+
+print('='*12,"卡路里",'='*12)
+print('#'*30)
+tz =float(input('请输入体重(kg):'))
+t=float(input("请输入运动时间(min):"))
+speed =float(input("请输入速度(km/h):"))
+k=30*(speed*1000/60)/400
+print('运动指数:',k)
+dist =speed*t/60
+cal=tz*t*k/60
+print("跑步距离：",dist )
+print("燃烧卡路里:",format(cal,'.2f'),'卡路里')
+
